@@ -1,23 +1,20 @@
 # N-gram-Application
-透過N-gram生成詞彙和Bag of Word表達文件向量方式, 進行cosine找出最相似的文件
+![demo](https://github.com/Alex-CHUN-YU/N-gram_Application/blob/master/image/demo.png)</br></br></br>
+透過N-gram生成詞彙並利用Bag of Word表達文件向量方式, 進行cosine找出最相似的文件
 
 ## 使用方式
 Input:</br>
 ```
-1.執行Main.py
+1.執行Main.py()並輸入以下類似之句子(EX:如果我不想使用預借現金服務，如何辦理?)
+2.可到CTBC.json中的資料集尋找句子修改做測試。
 ```
 Output:</br>
 ```
-測試的Term:如何
-TF-IDF = 0.03895987786198207
-TF = 0.05299860529986053
-IDF = 0.7351113796589775
+以下為可能回覆的答案:
+您可隨時致電本行客服專線0800-024-365按1輸入個人資料後按9轉接客服人員，即可立刻為您線上關閉預借現金功能。
 ```
 
 ## 開發環境
-Maven Project</br>
-Eclipse Version: Neon.2 Release (4.6.2)</br>
-JDK: java version "1.8.0_121"</br>
-註: Eclipse 編碼如有問題請參照:</br>
-File -> Properties > Resource >> Text file encoding >> UTF-8</br>
-Windows -> Preferences >> General >> Workspace >> Text file encoding >> MS950 ... 
+Python 3.5.2
+pip install json
+pip install scipy

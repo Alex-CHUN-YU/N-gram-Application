@@ -1,6 +1,6 @@
 __author__ = "ALEX-CHUN-YU (P76064538@mail.ncku.edu.tw)"
 import json as js
-from scipy import spatial
+#from scipy import spatial
 from numpy import dot
 from numpy.linalg import norm
 

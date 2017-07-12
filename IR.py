@@ -35,7 +35,11 @@ class IR(object):
 		max = 0
 		#print(type(doc_bag))
 		#print(type(doc))
+		# Avoid Invalid Value
+		doc.append(1)
 		for i in range(len(doc_bag)):
+			# Avoid Invalid Value
+			doc_bag[i].append(1)
 			try:
 				result = 1 - spatial.distance.cosine(doc_bag[i], doc)
 			except Exception as e:
@@ -66,7 +70,7 @@ class IR(object):
 						bag.append(self.question[i][j])
 		#print(bag)
 		#print("\n")
-		# BOW use n-gram model, and sava vector to dictionary, 這邊以數量進行累加，也可使用TF-IDF進行加權之方法
+		# BOW use n-gram model, and sava vector to dictionary, 這邊以數量進行累加，也可使用TF-IDF進行加權之方法，由於中國信託的問題集每個文件term之重複率不高，故使用前者。
 		doc_bag = []
 		doc = []
 		for i in range(len(self.question)):

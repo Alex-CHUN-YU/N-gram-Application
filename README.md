@@ -15,6 +15,6 @@ Output:</br>
 ```
 
 ## 開發環境
-Python 3.5.2
-pip install json
+Python 3.5.2</br>
+pip install json</br>
 pip install scipy

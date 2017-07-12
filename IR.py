@@ -1,6 +1,8 @@
 __author__ = "ALEX-CHUN-YU (P76064538@mail.ncku.edu.tw)"
 import json as js
 from scipy import spatial
+from numpy import dot
+from numpy.linalg import norm
 
 # 透過N-gram生成詞彙和Bag of Word表達文件向量方式, 進行cosine找出最相似的文件
 class IR(object):
@@ -41,7 +43,8 @@ class IR(object):
 			# Avoid Invalid Value
 			doc_bag[i].append(1)
 			try:
-				result = 1 - spatial.distance.cosine(doc_bag[i], doc)
+				#result = 1 - spatial.distance.cosine(doc_bag[i], doc)
+				result = dot(doc_bag[i], doc) / (norm(doc_bag[i]) * norm(doc))
 			except Exception as e:
 				print(e)
 			else:

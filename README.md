@@ -1,5 +1,5 @@
 # N-gram-Application
-![demo](https://github.com/Alex-CHUN-YU/N-gram_Application/blob/master/image/demo.png)</br></br></br>
+![demo](https://github.com/Alex-CHUN-YU/N-gram_Application/blob/master/image/demo.png)</br></br>
 透過 N-gram 生成詞彙並利用 Bag of Word 表達文件向量方式, 進行 cosine 找出最相似的文件
 
 ## 使用方式

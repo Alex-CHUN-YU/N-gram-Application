@@ -1,5 +1,5 @@
 __author__ = "ALEX-CHUN-YU (P76064538@mail.ncku.edu.tw)"
-from IR import IR
+from ir import IR
 
 def main():
 	ir = IR()
